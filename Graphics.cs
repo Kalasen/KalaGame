@@ -69,7 +69,7 @@ namespace KalaGame
             Sdl.SDL_Flip(screen);
         }
 
-        public void DrawText(string text, Vector2 position, Color color = default(Color), Fonts font = Fonts.VeraSmall)
+        public void DrawText(string text, Point2D position, Color color = default(Color), Fonts font = Fonts.VeraSmall)
         {
             //Let's go with white if unspecified
             if (color == default(Color))
@@ -108,7 +108,7 @@ namespace KalaGame
             Sdl.SDL_FreeSurface(textPointer); //Free the text image
         }
 
-        public void DrawImage(Sdl.SDL_Surface image, Vector2 pos)
+        public void DrawImage(Sdl.SDL_Surface image, Point2D pos)
         {
             //STUB
         }

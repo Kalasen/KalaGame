@@ -14,11 +14,11 @@ namespace KalaGame
         List<Menu> children = new List<Menu>();
         List<string> menuItems = new List<string>();
 
-        Vector2 pos;
+        Point2D pos;
         string title;
         Color color;
 
-        public Menu(string title, Vector2 pos, Color color = default(Color))
+        public Menu(string title, Point2D pos, Color color = default(Color))
         {
             this.title = title;
             this.pos = pos;
@@ -27,8 +27,8 @@ namespace KalaGame
 
         public void Draw(Graphics graphics)
         {
-            graphics.DrawText(title, new Vector2(pos.X, pos.Y), color, Fonts.Vera);
-            graphics.DrawText("Child menus and menu items go here", new Vector2(pos.X + 30, pos.Y + 30), color, Fonts.Vera);
+            graphics.DrawText(title, new Point2D(pos.X, pos.Y), color, Fonts.Vera);
+            graphics.DrawText("Child menus and menu items go here", new Point2D(pos.X + 30, pos.Y + 30), color, Fonts.Vera);
         }
     }
 }

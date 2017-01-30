@@ -6,11 +6,11 @@ namespace KalaGame
     public class TextSprite : IDrawable
     {
         string text;
-        Vector2 pos;
+        Point2D pos;
         Color color;
         Fonts font;
 
-        public TextSprite(string text, Vector2 pos, Color color = default(Color), Fonts font = Fonts.VeraSmall)
+        public TextSprite(string text, Point2D pos, Color color = default(Color), Fonts font = Fonts.VeraSmall)
         {
             this.text = text;
             this.pos = pos;
